@@ -69,7 +69,7 @@ def test_8_chars_with_no_upper_case_password_should_raise_exception():
         validator.password_validate()
 
 def test_8_chars_with_invalid_especial_character_password_should_raise_exception():
-    # given
+    # given m
     validator = PasswordValidator(content="c@^bc@a1")
     with pytest.raises(Exception):  # then
         # when
